@@ -1,4 +1,7 @@
 
-    function beer() {
-    alert("You chose Beer");
+    document.addEventListener('keydown', logKey);
+ 
+
+function logKey(e) {
+    
 }
