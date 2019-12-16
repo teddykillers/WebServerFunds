@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>CreditCard</title>
+</head>
 
     <p>Thank you for getting scammed</p>
 
@@ -37,4 +38,5 @@
 
                     $conn->close();
                 ?> 
+
 </html>
