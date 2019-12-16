@@ -46,11 +46,13 @@
                 </div>
             
 
-        <br/>
-        <p>Enter Your CVV number</p>    
-                <input type="text" size="3" id="CCV" name="CVVNum">
- 
-        <br/>
+            <br/>
+            <p>Enter Your CVV number</p>    
+                    <input type="text" size="3" id="CCV" name="CVVNum">
+    
+            <br/>
+            </form>
+
         <form  onsubmit="return CCValidation()">
             <input type="submit">
         </form>
