@@ -22,7 +22,7 @@
 
 <body>
     <img src="https://www.downtownkelowna.com/application/files/cache/d956e4c3765fc88def8a3da924446722.jpg" alt="Logo" style="float:right;width:450px;height:200px;">
-    <break/>
+    <br/>
     
     <h1>Bank Information</h1>
     
@@ -30,6 +30,9 @@
     <p>Please Fill out this form to confirm your bank information</p>
     
     <br/>
+
+    
+
     <p>Enter Your First Name        Enter Your Last Name</p>
         <form>
             <input type="text" id="firstname" onkeypress="return isValid(event);" /><span> </span><input type="text" id="lastname">
@@ -56,24 +59,21 @@
 
         <!--experitaion date-->
     <p>Enter the Expiration Date</p>
-        <form>
             <div>
                 <input type="text" size="2" id="ExpiryMonth"/><span>/</span><input type="text" size="4" id="ExpiryYear">
             </div>
-        </form>
         
 
     <br/>
-    <p>Enter Your CCV number</p>    
-        <form>
+    <p>Enter Your CVV number</p>    
             <input type="text" size="3" id="CCV" name="CVVNum">
-        </form>
 
     <br/>
     <br/>
-        <form onsubmit="return CCValidation()" action="action.php" method="POST">
+        <form  onsubmit="return CCValidation()" action="action_page.php" method="GET">
             <input type="submit">
         </form>
+                 
 
     </div> 
 
