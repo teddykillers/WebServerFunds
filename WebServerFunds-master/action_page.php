@@ -26,8 +26,8 @@
                             die("Connection failed: " . $conn->connect_error);
                         }
 
-                        $sql = "INSERT INTO creditcard (firstname, lastname, creditcard, CVV, 'month', 'year')
-                        VALUES (,$ )";
+                        $sql = "INSERT INTO ccinfo (firstname, lastname, creditcard, CVV, 'month', 'year')
+                        VALUES ($firstname,$lastname,$CC,$CVV,$month,$year)";
 
                         if ($conn->query($sql) === TRUE) {
                             echo "New record created successfully";
