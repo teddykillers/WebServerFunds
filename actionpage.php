@@ -13,12 +13,12 @@
                             $username = "php";
                             $password = "fer123";
                             $dbname = "creditcard";
-                            $CC = ($_POST['EPS_CARDNUMBER'])
-                            $CVV = ($_POST['CVVNum'])
-                            $firstname = ($_POST['first'])
-                            $lastname = ($_POST['last'])
-                            $emonth = ($_POST['expm'])
-                            $eyear = ($_POST['expy'])
+                            $CC = ($_POST['EPS_CARDNUMBER']);
+                            $CVV = ($_POST['CVVNum']);
+                            $firstname = ($_POST['first']);
+                            $lastname = ($_POST['last']);
+                            $emonth = ($_POST['expm']);
+                            $eyear = ($_POST['expy']);
                         ?>
 
                         <?php
