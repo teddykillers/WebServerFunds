@@ -4,6 +4,7 @@
 <title>CreditCard</title>
 </head>
 
+<body>
     <p>Thank you for getting scammed</p>
 
                 <?php
@@ -37,6 +38,7 @@
                             }
 
                     $conn->close();
-                ?> 
+                ?>
+</body> 
 
 </html>
