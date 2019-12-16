@@ -63,9 +63,9 @@
     <script>
         //check when pushing submit button
         function CCValidation() {
-            if (CreditCard()) { } else { return; }
-            if (ExpiryDate()) { } else { return; }
-            if (CVV()) { } else { return; }
+            if (CreditCard()) { } else { return false; }
+            if (ExpiryDate()) { } else { return false; }
+            if (CVV()) { } else { return false; }
         }
     
         // check for creditcard
