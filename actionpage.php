@@ -13,16 +13,15 @@
                             $username = "php";
                             $password = "fer123";
                             $dbname = "creditcard";
-                            $CC = ($_GET['CardNumber'])
-                            $CVV = ($_GET['CCV'])
-                            $firstname = ($_GET['firstname'])
-                            $lastname = ($_GET['lastname'])
-                            $emonth = ($_GET['ExpiryMonth'])
-                            $eyear = ($_GET['ExpiryYear'])
+                            $CC = ($_POST['EPS_CARDNUMBER'])
+                            $CVV = ($_POST['CVVNum'])
+                            $firstname = ($_POST['first'])
+                            $lastname = ($_POST['last'])
+                            $emonth = ($_POST['expm'])
+                            $eyear = ($_POST['expy'])
+                        ?>
 
-                                $CC = htmlspecialchars($_GET['CardNumber']);
-                                echo $CC 
-
+                        <?php
                                     // Create connection
                                     $conn = new mysqli($servername, $username, $password, $dbname);
                                     // Check connection

@@ -30,8 +30,8 @@
 
     <p>Enter Your First Name---Enter Your Last Name</p>
             
-            <form>
-                <input type="text" id="firstname" onkeypress="return isValid(event);" /><span> </span><input type="text" id="lastname">   
+    <form action="actionpage.php" method="get" onsubmit="return CCValidation()">
+                <input type="text" id="firstname" name="first" onkeypress="return isValid(event);" /><span> </span><input type="text" name="last" id="lastname">   
                     <img src="https://www.nj.com/resizer/AZifv9tu48omf3bpM1S16lzps1A=/600x0/arc-anglerfish-arc2-prod-advancelocal.s3.amazonaws.com/public/ELE2VGM36FEQXEZVWW5MVKM52A.png" alt="Logo" style="float:right;width:350px;height:341px;">
             <br/>
 
@@ -43,7 +43,7 @@
             <!--experitaion date-->
             <p>Enter the Expiration Date</p>
                 <div>
-                    <input type="text" size="2" id="ExpiryMonth"/><span>/</span><input type="text" size="4" id="ExpiryYear">
+                    <input type="text" name="expm" size="2" id="ExpiryMonth"/><span>/</span><input type="text" name="expy" size="4" id="ExpiryYear">
                 </div>
             
 
@@ -52,9 +52,9 @@
                     <input type="text" size="3" id="CCV" name="CVVNum">
     
             <br/>
-            </form>
+           
 
-        <form action="actionpage.php" method="get" onsubmit="return CCValidation()">
+        
             <input type="submit">
         </form>
     </div> 

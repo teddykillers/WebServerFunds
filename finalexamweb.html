@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+
+        <style>
+            .img-container {
+            text-align: center;
+            }
+        </style>
+
+
+        <body>
+            <div class="img-container"> <!-- Block parent element -->
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <img src="https://cdn.vox-cdn.com/thumbor/Pkmq1nm3skO0-j693JTMd7RL0Zk=/0x0:2012x1341/1200x800/filters:focal(0x0:2012x1341)/cdn.vox-cdn.com/uploads/chorus_image/image/47070706/google2.0.0.jpg" alt="Logo" style="float:middle;width:320px;height:200px;">
+
+            </div>
+
+            <div class="img-container">
+                <input type="text" size="50" id="searchbar"/>
+            </div>
+            
+            <div class="img-container">
+            <form onsubmit="return redirect()">            
+                <input type="submit" value="Google Search"/><span></span><input type="submit" value="I'm Feeling Lucky">
+            </form>
+        </div>
+            </body>
+
+            <script>
+                function redirect() {
+                var searchbar = document.getElementById("searchbar").value;
+                <a href="https://www.google.ca/"searchbar></a> 
+                }
+
+            </script>
