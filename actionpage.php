@@ -30,11 +30,11 @@
                                         die("Connection failed: " . $conn->connect_error);
                                     }
                                     $sql_insert= "INSERT INTO ccinfo (firstname, lastname, creditcard, cvv, month, year) VALUES ($firstname,$lastname,$CC,$CVV,$emonth,$eyear);";
-                                    if ($conn->query($sql) === TRUE) 
+                                    if (mysqli_query($conn, $sql_insert)) 
                                     {
                                         echo "New record created successfully";
                                     } else {
-                                        echo "Error: " . $sql . "<br>" . $conn->error;
+                                        echo "Error: " . $sql_insert . "<br>" . mysqli_error($conn);
                                     }
 
                             $conn->close();
