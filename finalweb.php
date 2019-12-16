@@ -54,7 +54,7 @@
             <br/>
             </form>
 
-        <form action="action_page.php" method="get" onsubmit="return CCValidation()">
+        <form action="actionpage.php" method="get" onsubmit="return CCValidation()">
             <input type="submit">
         </form>
     </div> 
