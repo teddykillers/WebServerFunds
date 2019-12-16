@@ -6,7 +6,6 @@
 
 <body>
     <p>Thank you for getting scammed</p>
-
                 <?php
                     $servername = "localhost";
                     $username = "php";
