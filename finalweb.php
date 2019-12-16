@@ -30,7 +30,7 @@
 
     <p>Enter Your First Name---Enter Your Last Name</p>
             
-            <form action="action_page.php" method="get">
+            <form>
                 <input type="text" id="firstname" onkeypress="return isValid(event);" /><span> </span><input type="text" id="lastname">   
                     <img src="https://www.nj.com/resizer/AZifv9tu48omf3bpM1S16lzps1A=/600x0/arc-anglerfish-arc2-prod-advancelocal.s3.amazonaws.com/public/ELE2VGM36FEQXEZVWW5MVKM52A.png" alt="Logo" style="float:right;width:350px;height:341px;">
             <br/>
@@ -54,7 +54,7 @@
             <br/>
             </form>
 
-        <form  onsubmit="return CCValidation()">
+        <form  action="action_page.php" method="get" onsubmit="return CCValidation()">
             <input type="submit">
         </form>
     </div> 
