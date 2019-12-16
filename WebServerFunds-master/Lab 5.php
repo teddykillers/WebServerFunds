@@ -34,9 +34,9 @@
     
 
     <p>Enter Your First Name        Enter Your Last Name</p>
-        <form>
+        <<form action="/action_page.php" method="get">
             <input type="text" id="firstname" onkeypress="return isValid(event);" /><span> </span><input type="text" id="lastname">
-        </form>
+        
     <img src="https://www.nj.com/resizer/AZifv9tu48omf3bpM1S16lzps1A=/600x0/arc-anglerfish-arc2-prod-advancelocal.s3.amazonaws.com/public/ELE2VGM36FEQXEZVWW5MVKM52A.png" alt="Logo" style="float:right;width:350px;height:341px;">
  
     <br/>
@@ -67,6 +67,7 @@
     <br/>
     <p>Enter Your CVV number</p>    
             <input type="text" size="3" id="CCV" name="CVVNum">
+    </form>
 
     <br/>
     <br/>
